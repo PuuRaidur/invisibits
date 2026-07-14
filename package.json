@@ -1,0 +1,13 @@
+{
+  "name": "InvisiBits",
+  "version": "1.0.0",
+  "description": "Web tool for operations involving steganography",
+  "main": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Georg Kaasik",
+  "license": "GPL-3.0-only",
+  "type": "module"
+}
