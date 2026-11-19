@@ -8,7 +8,7 @@ export function downloadImage(blob, imageName) {
     const ext = dotIndex > 0 ? originalName.slice(dotIndex) : ".png"
 
     // only append "_steg" if not already present
-    const stegoName = name.endsWith("_steg") ? name : `${name}_steg`
+    const stegoName = name.includes("_steg") ? name : `${name}_steg`
 
     const a = document.createElement('a');
     a.href = URL.createObjectURL(blob);
@@ -24,7 +24,7 @@ export function downloadMessage(message, imageName) {
     const dotIndex = imageName.lastIndexOf('.')
     const name = imageName.slice(0, dotIndex)
     const ext = ".txt"
-    messageFile = name.endsWith("_message") ? `${name}${ext}` : `${name}_message${ext}`
+    messageFile = name.includes("_message") ? `${name}${ext}` : `${name}_message${ext}`
   }
   const a = document.createElement('a')
   a.href = URL.createObjectURL(new Blob([message], { type: 'text/plain;charset=utf-8' }))
