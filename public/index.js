@@ -26,9 +26,15 @@ image_input.addEventListener("change", () => {
   if (!file) return
   if (preview[1].src) URL.revokeObjectURL(preview[1].src)
 
+  if (file.type !== "image/png" && file.type !== "image/jpeg") {
+    alert("File must be PNG or JPG")
+    file = undefined
+    return
+  }
   const MAX_BYTES = 5 * 1024 * 1024 // 5 MB
   if(file.size > MAX_BYTES) {
     alert("File too big, max 5 MB!")
+    file = undefined
     return
   }
   encode_status.hidden = true
