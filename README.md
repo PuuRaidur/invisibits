@@ -6,7 +6,7 @@ InvisiBits is a tool of simple design for hiding/revealing text messages within 
 
 - encoding messages into images
 - decoding messages from images
-- encrypting/decrypting images with password
+- encrypting/decrypting messages with password
 - download extracted message
 
 ## Prerequisites
