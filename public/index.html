@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./style/tab-icon.webp">
+    <title>InvisiBits</title>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+    <div id="steg-div">
+        <p>
+            Steganographic <span style="color: red">R</span><span style="color: green">G</span><span style="color: blue">B</span> LSB technique tool
+
+            Select image: <input id="image" type="file" accept="image/png,image/jpeg">
+
+            Message:
+            <textarea id="message" rows="5" cols="40" placeholder="Type message"></textarea>
+
+            Password(optional):
+            <input id="password" type="password" placeholder="Password">
+
+            Hide the message: <button id="encode" type="button">Hide</button>
+            <span id="encode-status" hidden></span>
+            Reveal the message: <button id="decode" type="button">Reveal</button>
+            <span id="decode-status" hidden></span>
+        </p>
+        <p class="extracted" hidden>Extracted message:</p>
+        <p id="extracted-message" hidden></p>
+        <p class="extracted" hidden>Download the revealed message: <button id="download-message" type="button">Download</button></p>
+        <p id="steg-image" hidden>Download the stego image: <button id="download-image" type="button">Download</button></p>
+        <p class="preview" hidden>Preview:</p>
+        <img class="preview" hidden>
+    </div>
+    <script type="module" src="./index.js"></script>
+</body>
+</html>
