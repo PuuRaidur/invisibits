@@ -2,9 +2,11 @@
 
 InvisiBits is a tool of simple design for hiding/revealing text messages within images using [LSB technique](https://medium.com/@renantkn/lsb-steganography-hiding-a-message-in-the-pixels-of-an-image-4722a8567046)
 
-You can contribute to this project only by forking it in accordance with Acceptable Use Policy
+You can contribute to this project only by forking it in accordance with the Acceptable Use Policy
 
 ## Acceptable Use Policy
+
+I don't take any responsibility for any misuse of this tool
 
 ### Permitted Use
 
