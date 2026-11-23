@@ -3,13 +3,17 @@
 }
 
 div {
+    width: 100%;
     display: grid;
     justify-content: center;
+    justify-items: center;
     align-items: center;
+    text-align: center;
     white-space: pre-wrap;
 }
 
 p {
+    width: 100%;
     text-align: center;
     font-weight: bold;
     font-size: 1.5rem;
@@ -74,7 +78,7 @@ button:hover {
     border-radius: 5px;
 }
 
-#preview {
+.preview {
     display: block;
     justify-content: center;
     justify-self: center;
